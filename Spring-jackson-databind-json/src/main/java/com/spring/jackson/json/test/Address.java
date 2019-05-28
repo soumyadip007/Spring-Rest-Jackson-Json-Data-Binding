@@ -1,4 +1,4 @@
-package com.spring.jackson.json;
+package com.spring.jackson.json.test;
 
 public class Address {
 
