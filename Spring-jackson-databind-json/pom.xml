@@ -3,12 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.luv2code</groupId>
-	<artifactId>jackson-databind-json-demo</artifactId>
-	<version>1.0.0</version>
-	<packaging>jar</packaging>
-
-	<name>jackson-demo</name>
-
+	<artifactId>spring-rest-demo</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -16,13 +13,45 @@
 	</properties>
 
 	<dependencies>
-	
+
+		<!-- Add Spring MVC and REST support -->
 		<dependency>
-			  <groupId>com.fasterxml.jackson.core</groupId>
-			  <artifactId>jackson-databind</artifactId>
-			  <version>2.9.5</version>		  
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>5.0.5.RELEASE</version>
 		</dependency>
 		
+		<!-- Add Jackson for JSON converters -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.5</version>
+		</dependency>
+
+		<!-- Add Servlet support for 
+			 Spring's AbstractAnnotationConfigDispatcherServletInitializer -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+				 
 	</dependencies>
+
+	<!-- Support for Maven WAR Plugin -->
+
+	<build>
+		<finalName>spring-rest-demo</finalName>
+	
+		<pluginManagement>
+			<plugins>
+				<plugin>
+				    <groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-war-plugin</artifactId>
+				    <version>3.2.0</version>					
+				</plugin>						
+			</plugins>
+		</pluginManagement>
+	</build>
 
 </project>
