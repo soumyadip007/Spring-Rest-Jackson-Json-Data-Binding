@@ -86,6 +86,8 @@ public class StudentRestController {
 		
 	}
 	
+	/*OUTPUT: {"status":404,"message":"Student is not found -99","timeStamp":155915*/
+	
 	// Add an exception handeler catch any exception (catch all)
 	
 	@ExceptionHandler
@@ -103,5 +105,5 @@ public class StudentRestController {
 		
 	}
 	
-	
+	/*Output:-{"status":400,"message":"Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: \"asd\"","timeStamp":1559152708748}*/
 }
