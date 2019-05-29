@@ -10,13 +10,6 @@ public class Student {
 		
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getFirstname() {
 		return firstname;
@@ -34,13 +27,6 @@ public class Student {
 		this.lastname = lastname;
 	}
 
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean active) {
-		this.active = active;
-	}
 	
 	
 }
