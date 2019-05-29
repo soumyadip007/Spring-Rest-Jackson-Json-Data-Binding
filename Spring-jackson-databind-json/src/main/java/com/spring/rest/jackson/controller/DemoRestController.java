@@ -1,4 +1,4 @@
-package com.spring.rest.jacksonconfig;
+package com.spring.rest.jackson.config;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.spring.rest.jacksonconfig;
+package com.spring.rest.jackson.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
