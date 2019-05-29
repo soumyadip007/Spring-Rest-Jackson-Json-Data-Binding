@@ -78,11 +78,11 @@ public class StudentRestController {
 		StudentErrorResponse error=new StudentErrorResponse();
 		
 		error.setStatus(HttpStatus.NOT_FOUND.value());
-		error.setMessage(HttpStatus.NOT_FOUND.value());
-		error.setTimeStamp(HttpStatus.NOT_FOUND.value());
+		error.setMessage(exe.getMessage());
+		error.setTimeStamp(System.currentTimeMillis());
 		
 		
-		return null;
+		return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
 		
 	}
 }
