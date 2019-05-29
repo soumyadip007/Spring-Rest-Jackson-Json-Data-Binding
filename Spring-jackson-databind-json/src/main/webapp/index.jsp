@@ -9,7 +9,9 @@
 <body>
 
 <h1>Rest controller</h1>
-<a href="test/hello">Click</a>
+<a href="test/hello">Click 4 Hello</a>
 
+
+<a href="api/students">Rest Addde</a>
 </body>
 </html>
