@@ -5,6 +5,9 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -65,4 +68,21 @@ public class StudentRestController {
 		
 	}
 	
+	
+	// Add an exception handeler using @ExceptionHandeler
+	
+	@ExceptionHandler
+	public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException	 exe)
+	{
+		//Create a 	StudentErrorResponse
+		StudentErrorResponse error=new StudentErrorResponse();
+		
+		error.setStatus(HttpStatus.NOT_FOUND.value());
+		error.setMessage(HttpStatus.NOT_FOUND.value());
+		error.setTimeStamp(HttpStatus.NOT_FOUND.value());
+		
+		
+		return null;
+		
+	}
 }
