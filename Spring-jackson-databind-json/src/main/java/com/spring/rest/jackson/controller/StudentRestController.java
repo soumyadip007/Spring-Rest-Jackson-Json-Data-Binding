@@ -58,7 +58,7 @@ public class StudentRestController {
 	{
 		//check the StudentID aginst the list Size
 		
-		if(studentID  >= obj.size() && (studentID<0))
+		if(studentID  >= obj.size() || (studentID<0))
 		{
 			throw new StudentNotFoundException("Student is not found -"+ studentID);
 		}
