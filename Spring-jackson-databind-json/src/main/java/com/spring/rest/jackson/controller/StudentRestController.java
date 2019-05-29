@@ -85,4 +85,7 @@ public class StudentRestController {
 		return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
 		
 	}
+	
+	// Add an exception handeler catch any exception (catch all)
+	
 }
