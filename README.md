@@ -131,7 +131,3 @@ Resource resource = appContext.getResource("classpath:data.json");
 ObjectMapper mapper = new ObjectMapper();
 Book[] b = mapper.readValue(resource.getFile(), Book[].class);
 ```
-
-### Dependency tree:
-![alt text](src/main/resources/img/rest-assured.png?raw=true "Rest-Assured pom")
-![alt text](src/main/resources/img/sprint-boot-starter-test.png?raw=true "Spring Test pom")
