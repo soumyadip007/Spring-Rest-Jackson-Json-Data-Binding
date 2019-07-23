@@ -11,11 +11,6 @@ Libraries used:
 1. spring boot web
 
 2. spring boot test
-   * [json-path](https://github.com/jayway/JsonPath)
-   * [junit](http://junit.org/junit4/)
-   * [mockito](http://site.mockito.org/)
-   * [hamcrest](https://github.com/hamcrest/JavaHamcrest)
-
 3. [rest-assured](http://rest-assured.io/)
    * [httpclient](https://hc.apache.org/httpclient-3.x/)
    * xml-path
