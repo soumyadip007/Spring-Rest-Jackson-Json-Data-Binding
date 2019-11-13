@@ -126,3 +126,4 @@ Resource resource = appContext.getResource("classpath:data.json");
 ObjectMapper mapper = new ObjectMapper();
 Book[] b = mapper.readValue(resource.getFile(), Book[].class);
 ```
+# Security Issue
