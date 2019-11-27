@@ -12,7 +12,7 @@ Libraries used:
 
 2. spring boot test
 
-[See dependency tree.](https://github.com/lidderupk/spring-rest#dependency-tree)
+[See dependency tree.](https://github.com/soumyadip007/Spring-Rest-Jackson-Json-Data-Binding/blob/master/Spring-jackson-databind-json/pom.xml)
 
 ## Testing Notes
 There are multiple ways to test spring applications. See [improvements in Spring Boot 1.4](https://spring.io/blog/2016/04/15/testing-improvements-in-spring-boot-1-4).
